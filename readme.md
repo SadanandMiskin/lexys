@@ -1,9 +1,10 @@
 # *LEXYS*
-## Document Generation for legal assistance powered by GenAI using Python and NoedJS
+## Document Generation for legal assistance powered by GenAI using Python and NodeJS
 *(Currently supports only accident related qureies and document generation)*
 
 ## Getting Started
-- At first download the required `content` folder - https://drive.google.com/drive/folders/1pTb6E8dQie36k7yZ_KkWPU7hYgMMezza?usp=sharing
+- Download the required `content` folder -
+ https://drive.google.com/drive/folders/1pTb6E8dQie36k7yZ_KkWPU7hYgMMezza?usp=sharing
 - The project is divided in two parts
 * Web - For web interfaces and server side rendering
 * AIModel - For processing and documenting the data
@@ -15,20 +16,21 @@
 
 ## AI model
 
-### Text Generation
+### Doc Generation (*Getting Start*)
 - `git clone https://github.com/SadanandMiskin/lexys`
 -  paste the downloaded `/content` folder to `root` directory
 -  Install All dependencies - `npm install` and `pip install torch torchvision torchaudio`
 -  Create a `.env` file and add value for connecting to mongoDB
 - Run the Application - `nodemon server.js`
 - Open the application on `http://localhost:3000`
+- Login and fill details and wait for some time for some magic.
 
 ### Chat Bot
 - cd `AI_NLP_Model` 
 - `python Chatbot_gui.py` only in `Google Colab` or `Jupyter Notebook` (requires `/content/output_2` model)
 
 ### Web
-- Backend - `Nodejs , MongoDB`
+- Backend - `Nodejs , MongoDB, sessions`
 - Frontend - `Html, Css, JavaScript`
 
 ### Features
