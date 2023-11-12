@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: sans-serif;
+            font-weight: 200;
+        }
+        body{
+            background-color: rgb(80, 73, 87);
+        }
+        .pdf{
+            background: #fff; 
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+      margin: 0 auto; 
+      width: 75%; 
+      height: 100%;
+      padding: 20px; 
+        }
+
+        .heading{
+            font-family: sans-serif;
+    width: 800px;
+    font-size: larger;
+    margin-top: 178px;
+    margin-left: 16%;
+        }
+    </style>
+</head>
+<body>
+    <button id="downloadButton">Download Content</button>
+    <div class="pdf">
+        
+        
+        <div class="heading" >
+            <h2 style="    font-size: larger;
+            margin-left: 3%;"><u>BEFORE THE MOTOR ACCIDENTS CLAIMS TRIBUNAL, KALABURAGI</u></h2>
+        <h3 style="font-size: medium;
+        margin-left: 22%;"><u>IN THE COURT OF THE   DIST  JUDGE  AT KALABURAGI.</u></h3>
+        </div>
+        <h3 style="        width: 144px;
+        height: 20px;
+        font-size: larger;
+        font-weight: 200;
+        margin-top: 178px;
+        margin-left: 22%;
+        margin-top: 100px;
+        "><u>PETITIONER/S:</u></h3>
+        <h4  style="    width: 582px;
+        height: 82px;
+        font-size: larger;
+        margin-top: 25px;
+        margin-left: 28%;
+        ">
+                 <%= input.Petitioner_Information %>  
+                </h4>
+        <h4 style=" margin-left: 46%;">...v/s...</h4>
+        <h3 style="     width: 144px;
+        height: 20px;
+        font-size: larger;
+        font-weight: 200;
+        margin-top: 56px;
+        margin-left: 22%;
+        "><u>RESPONDENT/S:</u></h3>
+         <h4  style="    width: 582px;
+         height: 82px;
+         font-size: larger;
+         margin-top: 25px;
+         margin-left: 28%;
+         ">
+           <%= input.Respondent_Information %>
+       </h4>
+         <center><h4 style="font-weight: 200;">-----------------------------------------------------------------------------------------------------------------------------------------------------</h4>
+            <h4><%= input.Title_Information %> </h4>
+            
+            <h4 >____________________________________________________________________________</h4></center>
+
+           <div style="display: flex;"> 
+            <h4 style="     width: 238px;
+            height: 82px;
+            
+            margin-top: 25px;
+            margin-left: 15%;
+            ">
+                Name and father’s name of the person		
+	dead/injured ((husband’s name) in 	   	
+case of married woman and widow)
+
+            </h4>
+            <h4 style="    width: 238px;
+            height: 82px;
+            margin-top: 25px;
+            margin-left: 28%;
+            ">
+                <%= input.Petitioner_Information %>
+
+            </h4>
+           </div>
+           <center><h4 style="font-weight: 200;">-----------------------------------------------------------------------------------------------------------------------------------------------------</h4>
+         
+            <div style="display: flex;"> 
+                <h4 style="     width: 238px;
+                height: 82px;
+                
+                margin-top: 25px;
+                margin-left: 15%;
+                ">
+                    Name and father’s name of the person		
+        who is respondent,
+    
+                </h4>
+                <h4 style="    width: 238px;
+                height: 82px;
+                margin-top: 25px;
+                margin-left: 28%;
+                ">
+                   <%= input.Respondent_Information %>
+    
+                </h4>
+               </div>
+               <center><h4 style="font-weight: 200;">-----------------------------------------------------------------------------------------------------------------------------------------------------</h4>
+                 
+          <center>
+            <h3 style="width: 900px; word-spacing: 8px;">
+                <%= accidentDetails %>
+            </h3>
+          </center>
+          
+            <h3 style="width: 900px; word-spacing: 8px;">
+                <%= impact %>
+            </h3>
+          </center>
+          <center><h4 style="font-weight: 200;">-----------------------------------------------------------------------------------------------------------------------------------------------------</h4>
+            <center><h4 style="font-weight:900; font-size: larger;"><u>Prayer</u></h4>
+            
+                <h3 style="width: 900px; word-spacing: 8px;">
+                  <% input.comLoss_and_compensation_claim %>, <%= compensation %>
+                </h3>
+
+                <h4 style="    margin-left: 25px;
+                font-weight: 200;
+                font-size: larger;
+                width: 255px;
+                margin-top: 182px;">
+                    Signature or the thumb
+ 						impression of the petitioner/s 
+
+                </h4>
+            </center>
+    </div>
+    <!-- Add this in the head section of your HTML -->
+<script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+<script>
+    document.getElementById('downloadButton').addEventListener('click', () => {
+      const element = document.querySelector('.pdf');
+  
+      // Use html2pdf library to convert the content to PDF
+      html2pdf(element);
+    });
+  </script>
+
+</body>
+</html>

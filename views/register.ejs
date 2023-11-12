@@ -1,0 +1,120 @@
+<html lang="en" style="--header-main-height: 86px;">
+<link type="text/css" id="dark-mode" rel="stylesheet" href="">
+<style type="text/css" id="dark-mode-custom-style"></style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Softnio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <title>Sign Up</title>
+   
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        .card-body{
+            background-color: black;
+  box-shadow: rgb(232, 3, 209) 0px 50px 109px -43px, rgba(234, 2, 222, 0.97) 0px 7px 87px -40px;
+        }
+        /* .blur-circle {
+            width: 709px;
+            height: 500px;
+            border-radius: 50%;
+            background-color: white;
+            filter: blur(390px);
+            opacity: .3;
+            position: absolute;
+            left: 23.1%;
+            top: -30%;
+
+
+        } */
+
+        label{
+           font-weight: 900;
+           color: white;
+        }
+       
+    </style>
+</head>
+
+<body class="nk-body is-dark" data-menu-collapse="lg">
+   
+    <div class="nk-app-root ">
+       
+        <main class="nk-pages">
+            <section class="section section-bottom-0 pb-5 has-mask">
+                <div class="nk-mask bg-pattern-dot bg-blend-around mt-n5 mb-10p mh-50vh"></div>
+                <div class="container">
+                    <!-- <div class="blur-circle"></div> -->
+                    <div class="section-head">
+                        <div class="row justify-content-center text-center">
+                            <div class="col-lg-11 col-xl-10 col-xxl-9">
+                                <h6 class="overline-title text-primary">Hello There!</h6>
+                                <h2 class="title">Sign Up to Start</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-content">
+                        <div class="row g-gs justify-content-center">
+                            <div class="col-md-7 col-lg-6 col-xl-5">
+                                <div class="card border-0 shadow-sm rounded-4">
+                                    <div class="card-body">
+                                        <form action="/register" method="post">
+                                            <div class="row g-4">
+                                                <div class="col-12">
+                                                    <div class="form-group"><label class="form-label"
+                                                            for="emailorusername">Name </label>
+                                                        <div class="form-control-wrap"><input type="text"
+                                                                name="name" id="emailorusername"
+                                                                class="form-control form-control-lg"
+                                                                placeholder="Enter Name " required=""></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="form-group"><label class="form-label"
+                                                            for="emailorusername">Email </label>
+                                                        <div class="form-control-wrap"><input type="email"
+                                                                name="email" id="emailorusername"
+                                                                class="form-control form-control-lg"
+                                                                placeholder="Enter Email " required=""></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="form-group"><label class="form-label"
+                                                            for="toggle-password">Password</label>
+                                                        <div class="form-control-wrap"><input
+                                                                type="password" name="password" id="toggle-password"
+                                                                class="form-control form-control-lg"
+                                                                placeholder="Enter Password" required=""></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="d-flex flex-wrap justify-content-between has-gap g-3">
+                                                        <div class="form-group">
+                                                           
+                                                        
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="form-group"><button class="btn btn-primary btn-block"
+                                                            type="submit" id="submit-btn" style="background-color: rgb(255, 0, 191);"><span style="border: 1px bold black; color: white; font-weight: bolder;">Sign Up</span></button></div>
+                                                </div>
+                                               
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <p class="text-center mt-4">Already a User? <a
+                                        href="/login">Login</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    </div>
+    
+ 
+</body>
+
+</html>

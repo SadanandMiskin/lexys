@@ -1,0 +1,315 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+      body {
+         background: rgb(30, 30, 40);
+      }
+
+      form {
+         max-width: 720px;
+         margin: 50px auto;
+         box-shadow: rgba(123, 22, 212, 0.954) 0px 13px 27px -5px, rgba(116, 5, 213, 0.977) 0px 8px 16px -8px;
+         padding: 10px;
+      }
+
+
+
+      .feedback-input {
+         color: white;
+         font-family: Helvetica, Arial, sans-serif;
+         font-weight: 500;
+         font-size: 18px;
+         line-height: 22px;
+         background-color: transparent;
+         border: 2px solid rgb(194, 156, 225);
+         transition: all 0.3s;
+         padding: 13px;
+         margin-bottom: 15px;
+         width: 100%;
+         box-sizing: border-box;
+         outline: 0;
+      }
+
+      .feedback-input:focus {
+         border: 2px solid #49a5cc;
+      }
+
+      textarea {
+         height: 150px;
+         line-height: 150%;
+         resize: vertical;
+      }
+
+      [type="submit"] {
+         font-size: 24px;
+         padding-top: 10px;
+         padding-bottom: 10px;
+         transition: all 0.3s;
+         margin-top: -4px;
+         width: 100%;
+         background: #af28e0;
+         border-radius: 5px;
+         font-weight: 700;
+         font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+         border: 0;
+         cursor: pointer;
+         color: white;
+
+      }
+
+      [type="submit"]:hover {
+         background: #1cc0dc;
+      }
+
+      h1 {
+         font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+         color: white;
+      }
+
+      .loading-overlay {
+         display: none;
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background: rgba(0, 0, 0, 0.5);
+         justify-content: center;
+         align-items: center;
+         z-index: 1000;
+      }
+
+      .loading-spinner {
+         border: 8px solid #f3f3f3;
+    border-top: 8px solid #a634db;
+    border-radius: 50%;
+    width: 50px;
+    height: 66px;
+    animation: spin 1s linear infinite;
+      }
+
+      @keyframes spin {
+         0% { transform: rotate(0deg); }
+         100% { transform: rotate(360deg); }
+      }
+   </style>
+</head>
+
+<body>
+   <form action="/form" method="post">
+      <center>
+         <h1>Fill the Details</h1>
+      </center>
+      <input name="Enter_title_information" type="text" class="feedback-input" placeholder="Enter title_information" />
+      <input name="Enter_petitioner_information" type="text" class="feedback-input" placeholder="Enter petitioner_information" />
+      <input name="respondent_information" type="text" class="feedback-input" placeholder="respondent_information" />
+      <input name="Enter_accident_detai" type="text" class="feedback-input" placeholder="Enter accident_detai" />
+      <input name="Enter_Description_of_deceased_and_accident_impact" type="text" class="feedback-input" placeholder="Enter Description_of_deceased_and_accident_impact" />
+      <input name="Enter_Loss_and_compensation_claim" type="text" class="feedback-input" placeholder="Enter Loss_and_compensation_claim" />
+   
+   <button type="submit" onclick="showLoading()">Submit</button>
+   <div class="loading-overlay" id="loadingOverlay">
+     
+      <div class="loading-spinner"></div>
+      <h2 style=" color: white; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin-left: 15px; background-color: #af28e0; padding: 8px;">Please Wait ... Usually takes lot of time</h2>
+     
+   </div>
+   </form>
+   <script>
+      function showLoading() {
+         // Display the loading overlay
+         document.getElementById('loadingOverlay').style.display = 'flex';
+         // Submit the form after a short delay (simulating the loading process)
+         setTimeout(() => {
+            document.getElementById('myForm').submit();
+         }, 1000); // You can adjust the delay as needed
+      }
+   </script>
+</body>
+
+</html>
+ -->
+
+
+
+
+
+
+<html lang="en" style="--header-main-height: 86px;">
+<link type="text/css" id="dark-mode" rel="stylesheet" href="">
+<style type="text/css" id="dark-mode-custom-style"></style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Softnio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Login</title>
+   
+    <link rel="stylesheet" href="style1.css">
+    <style>
+       .loading-overlay {
+         display: none;
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background: rgba(0, 0, 0, 0.5);
+         justify-content: center;
+         align-items: center;
+         z-index: 1000;
+      }
+
+      .loading-spinner {
+         border: 8px solid #f3f3f3;
+    border-top: 8px solid #a634db;
+    border-radius: 50%;
+    width: 50px;
+    height: 66px;
+    animation: spin 1s linear infinite;
+      }
+
+      @keyframes spin {
+         0% { transform: rotate(0deg); }
+         100% { transform: rotate(360deg); }
+      }
+        .card-body{
+            background-color: black;
+  box-shadow: rgb(209, 162, 8) 0px 50px 109px -43px, rgba(207, 133, 5, 0.97) 0px 7px 87px -40px;
+        }
+        /* .blur-circle {
+            width: 709px;
+            height: 500px;
+            border-radius: 50%;
+            background-color: white;
+            filter: blur(390px);
+            opacity: .3;
+            position: absolute;
+            left: 23.1%;
+            top: -30%;
+
+
+        } */
+
+        label{
+           font-weight: 900;
+           color: white;
+        }
+       
+    </style>
+</head>
+
+<body class="nk-body is-dark" data-menu-collapse="lg">
+   
+    <div class="nk-app-root ">
+       
+        <main class="nk-pages">
+            <section class="section section-bottom-0 pb-5 has-mask">
+                <div class="nk-mask bg-pattern-dot bg-blend-around mt-n5 mb-10p mh-50vh"></div>
+                <div class="container">
+                    <!-- <div class="blur-circle"></div> -->
+                    <div class="section-head">
+                        <div class="row justify-content-center text-center">
+                            <div class="col-lg-11 col-xl-10 col-xxl-9">
+                                <h6 class="overline-title text-primary">Welcome Back!, <span style="color: #af28e0;"> <%= em %></span></h6>
+                                <h2 class="title">Enter the details</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-content">
+                        <div class="row g-gs justify-content-center">
+                            <div class="col-md-7 col-lg-6 col-xl-5">
+                                <div class="card border-0 shadow-sm rounded-4">
+                                    <div class="card-body">
+                                        <form action="/form" method="post">
+                                            <div class="row g-4">
+                                                <div class="col-12">
+                                                    <div class="form-group"><label class="form-label"
+                                                            for="emailorusername">Title Information </label>
+                                                        <div class="form-control-wrap"> <input name="Enter_title_information" type="text"  class="form-control form-control-lg"  placeholder="Enter title information" /></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="form-group"><label class="form-label"
+                                                            for="toggle-password">Petitioner Information</label>
+                                                        <div class="form-control-wrap"><input name="Enter_petitioner_information" type="text"  class="form-control form-control-lg" placeholder="Enter petitioner information" /></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                   <div class="form-group"><label class="form-label"
+                                                           for="toggle-password">Respondent Information</label>
+                                                       <div class="form-control-wrap"> <input name="respondent_information" type="text"  class="form-control form-control-lg" placeholder="Enter respondent information" /></div>
+                                                   </div>
+                                               </div>
+                                               <div class="col-12">
+                                                <div class="form-group"><label class="form-label"
+                                                        for="toggle-password">Accident Information </label>
+                                                    <div class="form-control-wrap"><input name="Enter_accident_detai" type="text"  class="form-control form-control-lg" placeholder="Enter accident details" /></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                             <div class="form-group"><label class="form-label"
+                                                     for="toggle-password">Description of deceased Information</label>
+                                                 <div class="form-control-wrap">    <input name="Enter_Description_of_deceased_and_accident_impact" type="text"  class="form-control form-control-lg" placeholder="Enter Description of deceased and accident impact" /></div>
+                                             </div>
+                                         </div>
+                                         <div class="col-12">
+                                          <div class="form-group"><label class="form-label"
+                                                  for="toggle-password">Loss and compensation</label>
+                                              <div class="form-control-wrap">   <input name="Enter_Loss_and_compensation_claim" type="text"  class="form-control form-control-lg" placeholder="Enter Loss and compensation claim" /></div>
+                                          </div>
+                                      </div>
+                                                <div class="col-12">
+                                                    <div class="d-flex flex-wrap justify-content-between has-gap g-3">
+                                                        <div class="form-group">
+                                                           
+                                                        <!-- </div><a href="https://copygen.themenio.com/reset.html"
+                                                            class="small">Forgot Password?</a>
+                                                    </div> -->
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="form-group"><button class="btn btn-primary btn-block" onclick="showLoading()"
+                                                            type="submit" id="submit-btn" style="background-color: rgb(255, 123, 0);"><span style="border: 1px bold black; color: white; font-weight: bolder;">Submit</span></button></div>
+                                                </div>
+                                                <div class="loading-overlay" id="loadingOverlay">
+                                                  
+                                                   <div class="loading-spinner"></div>
+                                                   <h2 style=" color: white; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin-left: 15px; background-color: #af28e0; padding: 8px;">Please Wait ... Usually takes lot of time</h2>
+                                                  
+                                                </div>
+                                                
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    </div>
+    
+    <script>
+      function showLoading() {
+         // Display the loading overlay
+         document.getElementById('loadingOverlay').style.display = 'flex';
+         // Submit the form after a short delay (simulating the loading process)
+         setTimeout(() => {
+            document.getElementById('myForm').submit();
+         }, 1000); // You can adjust the delay as needed
+      }
+   </script>
+</body>
+
+</html>
