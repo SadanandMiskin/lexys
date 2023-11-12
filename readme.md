@@ -37,3 +37,10 @@
 - GPT2 - for generating texts
 - nodejs - server for flow of data
 - mongodb - database for storage
+
+## Collaborators
+
+- [Vaibhav V Vernekar](https://github.com/VaibahvVernekar27)
+- [Sadanand Miskin](https://github.com/SadanandMiskin)
+- [Apoorva](https://github.com/ApoorvaAppu12)
+- [Kaushal S Boralkar](https://github.com/boralkarkaushal)
