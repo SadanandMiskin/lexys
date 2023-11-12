@@ -28,7 +28,7 @@
 
 ### Web
 - Backend - `Nodejs , MongoDB`
-- Frontend - `html, css, js`
+- Frontend - `Html, Css, JavaScript`
 
 ### Features
 - GPT2 - for generating texts
