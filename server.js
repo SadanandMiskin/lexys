@@ -12,7 +12,8 @@ const path = require('path');
 const { spawn } = require('child_process');
 const bodyParser = require('body-parser');
 const session = require('express-session')
-const app = express()
+const app = express();
+
 
 app.use(session({
     secret: 'lexmachinamachinalex',
