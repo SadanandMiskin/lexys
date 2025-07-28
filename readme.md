@@ -1,5 +1,5 @@
 # *LEXYS*
-## Document Generation for legal assistance powered by GenAI using Python and NodeJS
+## Document Generation for legal assistance powered by GenAI using Python and NodeJS 
 *(Currently supports only accident related qureies and document generation)*
  
 ## Getting Started
